@@ -5,14 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/0-banking-plugins/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/resources/db/migrations/V1__create_customer_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/resources/db/migrations/V2__create_account_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/resources/db/migrations/V3__create_transaction_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/CreateUserUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/LoginUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/CreateUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/BankEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/enums/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/exceptions/AccountLockedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/exceptions/InsufficientFundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/AccountNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/PIN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-abstractioncode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4-abstractioncode/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -25,7 +59,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2vD9De5RtKpFs2pmEU27IBjSXJa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,11 +70,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -50,7 +88,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743668659022</updated>
-      <workItem from="1743668660462" duration="678000" />
+      <workItem from="1743668660462" duration="1739000" />
+      <workItem from="1743940183613" duration="7022000" />
     </task>
     <servers />
   </component>
