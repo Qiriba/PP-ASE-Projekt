@@ -35,7 +35,7 @@ public class Account {
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
 
-    // Standardkonstruktor für JPA
+
     public Account() {
     }
 
@@ -46,8 +46,6 @@ public class Account {
         this.locked = false;
         this.customer = customer;
     }
-
-    // === Fachliche Methoden ===
 
     public void deposit(Money amount) {
         ensureNotLocked();
@@ -89,7 +87,6 @@ public class Account {
         this.locked = false;
     }
 
-    // === Private Hilfsmethoden ===
 
     private void ensureNotLocked() {
         if (locked) {

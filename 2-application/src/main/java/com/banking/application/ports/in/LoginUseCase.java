@@ -1,4 +1,9 @@
 package com.banking.application.ports.in;
 
-public class LoginUseCase {
+import com.banking.domain.model.Customer;
+
+import java.util.Optional;
+
+public interface LoginUseCase {
+    Optional<Customer> login(String username, String password);
 }
