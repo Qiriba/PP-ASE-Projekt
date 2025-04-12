@@ -4,11 +4,15 @@ import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.Objects;
 
+
 public class Money {
 
     private final BigDecimal amount;
     private final Currency currency;
-
+    protected Money() {
+        this.amount = null;
+        this.currency = null;
+    }
     public Money(BigDecimal amount, Currency currency) {
         if (amount == null || currency == null) throw new IllegalArgumentException("Nullwerte nicht erlaubt");
         if (amount.scale() > 2) throw new IllegalArgumentException("Nur 2 Nachkommastellen erlaubt");

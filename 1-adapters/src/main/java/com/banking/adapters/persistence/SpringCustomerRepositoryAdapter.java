@@ -1,5 +1,4 @@
 package com.banking.adapters.persistence;
-
 import com.banking.application.ports.out.CustomerRepositoryPort;
 import com.banking.domain.model.Customer;
 import org.springframework.stereotype.Component;

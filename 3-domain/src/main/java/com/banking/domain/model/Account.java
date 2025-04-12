@@ -2,13 +2,10 @@ package com.banking.domain.model;
 
 import com.banking.domain.model.valueobjects.Money;
 import com.banking.domain.model.valueobjects.AccountNumber;
-import com.banking.domain.model.Transaction;
-import com.banking.domain.model.enums.TransactionType;
 import com.banking.domain.model.exceptions.AccountLockedException;
-import com.banking.domain.model.exceptions.InsufficientFundsException;
 
 import jakarta.persistence.*;
-import java.time.LocalDateTime;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -29,10 +26,10 @@ public class Account {
     private boolean locked;
 
     @OneToMany(mappedBy = "sourceAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Transaction> transactionHistoryAsSource = new ArrayList<>();
+    private List<Transactions> transactionsHistoryAsSource = new ArrayList<>();
 
     @OneToMany(mappedBy = "targetAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Transaction> transactionHistoryAsTarget = new ArrayList<>();
+    private List<Transactions> transactionsHistoryAsTarget = new ArrayList<>();
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
@@ -126,10 +123,10 @@ public class Account {
     }
 
     @Transient
-    public List<Transaction> getTransactionHistory() {
-        List<Transaction> all = new ArrayList<>();
-        all.addAll(transactionHistoryAsSource);
-        all.addAll(transactionHistoryAsTarget);
+    public List<Transactions> getTransactionHistory() {
+        List<Transactions> all = new ArrayList<>();
+        all.addAll(transactionsHistoryAsSource);
+        all.addAll(transactionsHistoryAsTarget);
         return all;
     }
 

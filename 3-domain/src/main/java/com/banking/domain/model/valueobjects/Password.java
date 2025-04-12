@@ -5,7 +5,9 @@ import java.util.Objects;
 public class Password {
 
     private final String password;
-
+    protected Password() {
+        this.password = null;
+    }
     public Password(String password) {
         if (password == null || password.length() < 6) {
             throw new IllegalArgumentException("Passwort muss mindestens 6 Zeichen lang sein.");

@@ -5,7 +5,9 @@ import java.util.Objects;
 public class PIN {
 
     private final String pin;
-
+    protected PIN() {
+        this.pin = null;
+    }
     public PIN(String pin) {
         if (pin == null || pin.length() != 4) {
             throw new IllegalArgumentException("PIN muss genau 4 Zeichen lang sein.");

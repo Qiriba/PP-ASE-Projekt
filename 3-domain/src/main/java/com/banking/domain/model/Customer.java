@@ -4,9 +4,7 @@ import com.banking.domain.model.valueobjects.PIN;
 import com.banking.domain.model.valueobjects.Password;
 import com.banking.domain.model.exceptions.AccountLockedException;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 import jakarta.persistence.*;
 
@@ -29,14 +27,13 @@ public class Customer {
     private int failedLoginAttempts;
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-    private Map<UUID, Account> accounts = new HashMap<>();
+    private List<Account> accounts = new ArrayList<>();
 
-    // Standardkonstruktor für JPA
+
     public Customer() {
     }
 
-    public Customer(UUID id, String username, Password password, PIN pin) {
-        this.id = id;
+    public Customer(String username, Password password, PIN pin) {
         this.username = username;
         this.password = password;
         this.pin = pin;
@@ -71,11 +68,14 @@ public class Customer {
     }
 
     public void addAccount(Account account) {
-        accounts.put(account.getId(), account);
+        accounts.add(account);
     }
 
     public Account getAccount(UUID accountId) {
-        return accounts.get(accountId);
+        return accounts.stream()
+                .filter(a -> a.getId().equals(accountId))
+                .findFirst()
+                .orElse(null);
     }
 
     // Getter-Methoden

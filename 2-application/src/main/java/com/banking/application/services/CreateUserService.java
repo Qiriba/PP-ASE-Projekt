@@ -5,6 +5,7 @@ import com.banking.application.ports.out.CustomerRepositoryPort;
 import com.banking.domain.model.Customer;
 import com.banking.domain.model.valueobjects.PIN;
 import com.banking.domain.model.valueobjects.Password;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -19,10 +20,11 @@ public class CreateUserService implements CreateUserUseCase {
     }
 
     @Override
+    @Transactional
     public Customer createUser(String username, String rawPassword, String rawPin) {
         Password password = new Password(rawPassword);
         PIN pin = new PIN(rawPin);
-        Customer customer = new Customer(UUID.randomUUID(), username, password, pin);
+        Customer customer = new Customer(username, password, pin);
         return customerRepository.save(customer);
     }
 
@@ -30,7 +32,6 @@ public class CreateUserService implements CreateUserUseCase {
     public void register(String username, String password, String pin) {
         UUID id = UUID.randomUUID();
         Customer customer = new Customer(
-                id,
                 username,
                 new Password(password),
                 new PIN(pin)

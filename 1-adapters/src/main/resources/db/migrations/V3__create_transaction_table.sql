@@ -1,4 +1,4 @@
-CREATE TABLE transaction (
+CREATE TABLE transactions (
                              id UUID PRIMARY KEY,
                              timestamp TIMESTAMP NOT NULL,
                              amount DECIMAL(15, 2) NOT NULL,

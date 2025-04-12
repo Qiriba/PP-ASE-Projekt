@@ -21,7 +21,7 @@ public class CustomerController {
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody CustomerRegistrationRequest request) {
-        createUserUseCase.register(request.username(), request.password(), request.pin());
+        createUserUseCase.createUser(request.username(), request.password(), request.pin());
         return ResponseEntity.ok("Customer registered");
     }
 }

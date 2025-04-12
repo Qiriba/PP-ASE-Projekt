@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/LoginRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/interfaces/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/interfaces/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringCustomerRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringCustomerRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/resources/db/migrations/V3__create_transaction_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/resources/db/migrations/V3__create_transaction_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/CreateUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/CreateUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Transactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/PIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/PIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking.db" beforeDir="false" afterPath="$PROJECT_DIR$/banking.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +82,11 @@
       <recent name="C:\Users\tobis\source\repos\PP-ASE-Projekt\0-plugins\src\main\resources" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn flyway:migrate -Dflyway.configFiles=myFlywayConfig.conf" />
+    </option>
+  </component>
   <component name="RunManager" selected="HTTP Request.generated-requests | #1">
     <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
       <method v="2" />
@@ -112,7 +128,7 @@
       <workItem from="1744094819015" duration="933000" />
       <workItem from="1744273663932" duration="1638000" />
       <workItem from="1744275562946" duration="3500000" />
-      <workItem from="1744474441174" duration="1368000" />
+      <workItem from="1744474441174" duration="4838000" />
     </task>
     <servers />
   </component>
@@ -129,6 +145,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/CreateUserService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

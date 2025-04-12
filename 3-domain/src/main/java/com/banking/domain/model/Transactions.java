@@ -9,7 +9,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Entity
-public class Transaction {
+public class Transactions {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,7 +31,7 @@ public class Transaction {
     @JoinColumn(name = "target_account_id", nullable = true)
     private Account targetAccount;
 
-    public Transaction(UUID id, LocalDateTime timestamp, Money amount, TransactionType type, Account sourceAccount, Account targetAccount) {
+    public Transactions(UUID id, LocalDateTime timestamp, Money amount, TransactionType type, Account sourceAccount, Account targetAccount) {
         this.id = id;
         this.timestamp = timestamp;
         this.amount = amount;
@@ -41,7 +41,7 @@ public class Transaction {
     }
 
     // Standardkonstruktor für JPA
-    public Transaction() {
+    public Transactions() {
     }
 
     public UUID getId() {
@@ -76,7 +76,7 @@ public class Transaction {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Transaction that)) return false;
+        if (!(o instanceof Transactions that)) return false;
         return id.equals(that.id);
     }
 
