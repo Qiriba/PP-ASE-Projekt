@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/0-plugins/src/main/java/com/banking/BankingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/interfaces/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringCustomerRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/out/CustomerRepositoryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/CustomerRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-plugins/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/0-plugins/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/0-plugins/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/CreateUserUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/CreateUserUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/LoginUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/LoginUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/CreateUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/CreateUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,19 +23,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/0-plugins/src/main/java/com/banking/BankingApplication.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2vD9De5RtKpFs2pmEU27IBjSXJa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -66,12 +53,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/code/PP-ASE-Projekt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.splitter.proportion": "0.3058104",
     "spring.configuration.checksum": "ddb121fde329f8939a6d096377269adb",
     "vue.rearranger.settings.migration": "true"
   }
@@ -81,8 +71,11 @@
       <recent name="C:\Users\tobis\source\repos\PP-ASE-Projekt\0-plugins\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingApplication">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
     <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="BankingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -100,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="Spring Boot.BankingApplication" />
         <item itemvalue="HTTP Request.All in generated-requests" />
       </list>
@@ -118,6 +112,7 @@
       <workItem from="1744094819015" duration="933000" />
       <workItem from="1744273663932" duration="1638000" />
       <workItem from="1744275562946" duration="3500000" />
+      <workItem from="1744474441174" duration="1368000" />
     </task>
     <servers />
   </component>
@@ -134,5 +129,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

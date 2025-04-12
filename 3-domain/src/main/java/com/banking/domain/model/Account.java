@@ -28,9 +28,11 @@ public class Account {
 
     private boolean locked;
 
-    @OneToMany(mappedBy = "account", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Transaction> transactionHistory = new ArrayList<>();
+    @OneToMany(mappedBy = "sourceAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Transaction> transactionHistoryAsSource = new ArrayList<>();
 
+    @OneToMany(mappedBy = "targetAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Transaction> transactionHistoryAsTarget = new ArrayList<>();
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
@@ -46,6 +48,7 @@ public class Account {
         this.locked = false;
         this.customer = customer;
     }
+/*
 
     public void deposit(Money amount) {
         ensureNotLocked();
@@ -74,6 +77,7 @@ public class Account {
         this.addTransaction(amount, TransactionType.TRANSFER_OUT, target);
         target.addTransaction(amount, TransactionType.TRANSFER_IN, this);
     }
+*/
 
     public void receiveTransfer(Account sender, Money amount) {
         this.balance = this.balance.add(amount);
@@ -94,6 +98,7 @@ public class Account {
         }
     }
 
+/*
     private void addTransaction(Money amount, TransactionType type, Account otherAccountId) {
         transactionHistory.add(new Transaction(
                 UUID.randomUUID(),
@@ -104,6 +109,7 @@ public class Account {
                 otherAccountId
         ));
     }
+*/
 
     // === Getter ===
 
@@ -119,8 +125,12 @@ public class Account {
         return balance;
     }
 
+    @Transient
     public List<Transaction> getTransactionHistory() {
-        return new ArrayList<>(transactionHistory); // defensive copy
+        List<Transaction> all = new ArrayList<>();
+        all.addAll(transactionHistoryAsSource);
+        all.addAll(transactionHistoryAsTarget);
+        return all;
     }
 
     public boolean isLocked() {

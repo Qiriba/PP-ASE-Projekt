@@ -1,4 +1,85 @@
 POST http://localhost:8080/api/customers/register
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "password": "123123",
+  "pin": "1231",
+  "username": "abcde"
+}
+
+<> 2025-04-12T183746.500.json
+
+###
+
+POST http://localhost:8080/api/customers/register
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "password": "123123",
+  "pin": "1231",
+  "username": "abcde"
+}
+
+<> 2025-04-12T183711.500.json
+
+###
+
+POST http://localhost:8080/api/customers/register
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "password": "123123",
+  "pin": "1231",
+  "username": "abcde"
+}
+
+<> 2025-04-12T183645.500.json
+
+###
+
+POST http://localhost:8080/api/customers/register
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "password": "123123",
+  "pin": "1231",
+  "username": "abcde"
+}
+
+<> 2025-04-12T183341.500.json
+
+###
+
+POST http://localhost:8080/api/customers/register
+Content-Type: application/json
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2025-04-12T183229.500.json
+
+###
+
+POST http://localhost:8080/api/customers/register
 Content-Length: 0
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
