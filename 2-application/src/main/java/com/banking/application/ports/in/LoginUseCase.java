@@ -5,5 +5,5 @@ import com.banking.domain.model.Customer;
 import java.util.Optional;
 
 public interface LoginUseCase {
-    Optional<Customer> login(String username, String password);
+    String login(String username, String password);
 }

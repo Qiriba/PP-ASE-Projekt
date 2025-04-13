@@ -87,6 +87,7 @@ public class Customer {
         return username;
     }
 
+    public Password getPassword() {return password;}
     public PIN getPin() {
         return pin;
     }

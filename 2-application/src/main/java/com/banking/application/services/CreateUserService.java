@@ -27,16 +27,4 @@ public class CreateUserService implements CreateUserUseCase {
         Customer customer = new Customer(username, password, pin);
         return customerRepository.save(customer);
     }
-
-    @Override
-    public void register(String username, String password, String pin) {
-        UUID id = UUID.randomUUID();
-        Customer customer = new Customer(
-                username,
-                new Password(password),
-                new PIN(pin)
-        );
-
-        customerRepository.save(customer);
-    }
 }
