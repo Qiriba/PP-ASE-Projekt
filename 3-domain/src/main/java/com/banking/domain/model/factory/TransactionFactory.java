@@ -4,10 +4,12 @@ import com.banking.domain.model.Account;
 import com.banking.domain.model.Transactions;
 import com.banking.domain.model.enums.TransactionType;
 import com.banking.domain.model.valueobjects.Money;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Component
 public class TransactionFactory {
 
     public Transactions createDeposit(Account account, Money amount) {

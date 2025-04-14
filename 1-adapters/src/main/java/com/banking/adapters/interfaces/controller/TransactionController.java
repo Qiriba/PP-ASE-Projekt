@@ -39,7 +39,7 @@ public class TransactionController {
                                      @RequestBody DepositRequestDTO request) {
         Customer customer = getCustomerFromToken(authHeader);
         Account account = getCustomerAccount(customer, request.accountId());
-        transactionService.deposit(account, new Money(request.amount()));
+        transactionService.deposit(account, new Money(request.amount(), request.currency()));
         return ResponseEntity.ok().build();
     }
 
@@ -48,7 +48,7 @@ public class TransactionController {
                                       @RequestBody WithdrawRequestDTO request) {
         Customer customer = getCustomerFromToken(authHeader);
         Account account = getCustomerAccount(customer, request.accountId());
-        transactionService.withdraw(account, new Money(request.amount()));
+        transactionService.withdraw(account, new Money(request.amount(), request.currency()));
         return ResponseEntity.ok().build();
     }
 
@@ -58,7 +58,7 @@ public class TransactionController {
         Customer customer = getCustomerFromToken(authHeader);
         Account from = getCustomerAccount(customer, request.fromAccountId());
         Account to = findAnyAccountById(request.toAccountId());
-        transactionService.transfer(from, to, new Money(request.amount()));
+        transactionService.transfer(from, to, new Money(request.amount(), request.currency()));
         return ResponseEntity.ok().build();
     }
 

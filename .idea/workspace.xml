@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/DepositRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/TransferRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/WithdrawRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/exceptions/CustomerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringCustomerRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringTransactionRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-plugins/src/main/java/com/banking/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-plugins/src/main/java/com/banking/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-plugins/src/main/java/com/banking/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/interfaces/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/interfaces/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringCustomerRepositoryAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringTransactionJpaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/TransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/out/TransactionRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/out/TransactionRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/DepositRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/DepositRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/TransferRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/TransferRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/WithdrawRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/WithdrawRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/factory/TransactionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/factory/TransactionFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +132,7 @@
       <workItem from="1744275562946" duration="3500000" />
       <workItem from="1744474441174" duration="5103000" />
       <workItem from="1744535142762" duration="4056000" />
-      <workItem from="1744620818448" duration="5163000" />
+      <workItem from="1744620818448" duration="6010000" />
     </task>
     <servers />
   </component>
