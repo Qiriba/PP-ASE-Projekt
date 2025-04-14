@@ -73,6 +73,6 @@ public class Money {
     }
 
     public static Money of(BigDecimal amount) {
-        return new Money(amount, Currency.getInstance("EUR")); // Standardwährung EUR
+        return new Money(amount, Currency.getInstance("EUR"));
     }
 }

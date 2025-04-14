@@ -8,6 +8,6 @@ public class BankEmployee {
         if (!customer.isLocked()) {
             throw new AccountLockedException("Konto ist nicht gesperrt.");
         }
-        customer.unlockAccount();
+        customer.unlockCustomer();
     }
 }

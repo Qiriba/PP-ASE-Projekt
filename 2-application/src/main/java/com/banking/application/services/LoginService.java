@@ -24,7 +24,7 @@ public class LoginService implements LoginUseCase {
         Customer customer = customerRepository.findByUsername(username).orElseThrow(() -> new RuntimeException("User not found"));
 
         if (customer.getPassword().matches(password)) {
-            return jwtProvider.generateToken(customer.getUsername());
+            return jwtProvider.generateToken(customer);
         } else {
             throw new RuntimeException("Invalid credentials");
         }

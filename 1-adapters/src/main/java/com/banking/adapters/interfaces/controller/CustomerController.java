@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerController {
 
     private final CreateUserUseCase createUserUseCase;
-
-
     public CustomerController(CreateUserUseCase createUserUseCase) {
         this.createUserUseCase = createUserUseCase;
     }

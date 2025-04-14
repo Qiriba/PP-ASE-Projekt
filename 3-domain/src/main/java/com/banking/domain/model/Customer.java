@@ -13,14 +13,14 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;  // UUID als Primärschlüssel
+    private UUID id;
 
     private String username;
 
-    @Embedded  // Wertobjekt für das Password
+    @Embedded
     private Password password;
 
-    @Embedded  // Wertobjekt für die PIN
+    @Embedded
     private PIN pin;
 
     private boolean locked;
@@ -52,17 +52,17 @@ public class Customer {
         } else {
             failedLoginAttempts++;
             if (failedLoginAttempts >= 3) {
-                lockAccount();
+                lockCustomer();
             }
             return false;
         }
     }
 
-    public void lockAccount() {
+    public void lockCustomer() {
         this.locked = true;
     }
 
-    public void unlockAccount() {
+    public void unlockCustomer() {
         this.locked = false;
         this.failedLoginAttempts = 0;
     }
@@ -78,7 +78,6 @@ public class Customer {
                 .orElse(null);
     }
 
-    // Getter-Methoden
     public UUID getId() {
         return id;
     }

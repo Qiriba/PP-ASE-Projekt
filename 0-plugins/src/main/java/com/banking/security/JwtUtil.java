@@ -1,6 +1,7 @@
 package com.banking.security;
 
 
+import com.banking.domain.model.Customer;
 import com.banking.domain.security.JwtProvider;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -11,16 +12,17 @@ import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
 import java.util.function.Function;
-
+import java.util.*;
 @Component
 public class JwtUtil implements JwtProvider {
 
     private final static SecretKey SECRET_KEY = Keys.hmacShaKeyFor("MySuperSecureSecretKeyThatIsLongEnoughForHS256".getBytes(StandardCharsets.UTF_8));
 
     @Override
-    public String generateToken(String username) {
+    public String generateToken(Customer customer) {
         return Jwts.builder()
-                .setSubject(username)
+                .setSubject(customer.getUsername())
+                .claim("customerId", customer.getId().toString())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60))
                 .signWith(SECRET_KEY)
@@ -32,6 +34,9 @@ public class JwtUtil implements JwtProvider {
         return extractClaim(token, Claims::getSubject);
     }
 
+    public UUID extractCustomerId(String token) {
+        return UUID.fromString(extractClaim(token, claims -> claims.get("customerId", String.class)));
+    }
     @Override
     public boolean validateToken(String token, String username) {
         return (username.equals(extractUsername(token)) && !isTokenExpired(token));

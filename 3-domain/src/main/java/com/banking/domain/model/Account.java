@@ -1,12 +1,16 @@
 package com.banking.domain.model;
 
+import com.banking.domain.model.enums.TransactionType;
+import com.banking.domain.model.exceptions.InsufficientFundsException;
 import com.banking.domain.model.valueobjects.Money;
 import com.banking.domain.model.valueobjects.AccountNumber;
 import com.banking.domain.model.exceptions.AccountLockedException;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Currency;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,10 +21,10 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Embedded  // AccountNumber als Value Object
+    @Embedded
     private AccountNumber accountNumber;
 
-    @Embedded  // Money als Value Object für das Guthaben
+    @Embedded
     private Money balance;
 
     private boolean locked;
@@ -35,7 +39,7 @@ public class Account {
     private Customer customer;
 
 
-    public Account() {
+    protected Account() {
     }
 
     public Account(UUID id, AccountNumber accountNumber, Money initialBalance, Customer customer) {
@@ -45,12 +49,11 @@ public class Account {
         this.locked = false;
         this.customer = customer;
     }
-/*
+
 
     public void deposit(Money amount) {
         ensureNotLocked();
         balance = balance.add(amount);
-        addTransaction(amount, TransactionType.DEPOSIT, null);
     }
 
     public void withdraw(Money amount) {
@@ -59,7 +62,6 @@ public class Account {
             throw new InsufficientFundsException("Nicht genug Guthaben");
         }
         balance = balance.subtract(amount);
-        addTransaction(amount, TransactionType.WITHDRAWAL, null);
     }
 
     public void transferTo(Account target, Money amount) {
@@ -68,15 +70,10 @@ public class Account {
             throw new InsufficientFundsException("Nicht genug Guthaben für Überweisung");
         }
         this.balance = this.balance.subtract(amount);
-        target.receiveTransfer(this, amount);
-
-        // Transaktionen in beiden Accounts speichern
-        this.addTransaction(amount, TransactionType.TRANSFER_OUT, target);
-        target.addTransaction(amount, TransactionType.TRANSFER_IN, this);
+        target.receiveTransfer(amount);
     }
-*/
 
-    public void receiveTransfer(Account sender, Money amount) {
+    public void receiveTransfer(Money amount) {
         this.balance = this.balance.add(amount);
     }
 
@@ -95,21 +92,6 @@ public class Account {
         }
     }
 
-/*
-    private void addTransaction(Money amount, TransactionType type, Account otherAccountId) {
-        transactionHistory.add(new Transaction(
-                UUID.randomUUID(),
-                LocalDateTime.now(),
-                amount,
-                type,
-                this,
-                otherAccountId
-        ));
-    }
-*/
-
-    // === Getter ===
-
     public UUID getId() {
         return id;
     }
@@ -121,7 +103,7 @@ public class Account {
     public Money getBalance() {
         return balance;
     }
-
+    public Currency getCurrency() { return balance.getCurrency();}
     @Transient
     public List<Transactions> getTransactionHistory() {
         List<Transactions> all = new ArrayList<>();

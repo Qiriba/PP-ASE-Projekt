@@ -40,7 +40,6 @@ public class Transactions {
         this.targetAccount = targetAccount;
     }
 
-    // Standardkonstruktor für JPA
     public Transactions() {
     }
 

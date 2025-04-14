@@ -28,17 +28,6 @@ public class JwtFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
 
-        final String requestURI = request.getRequestURI();
-        final String method = request.getMethod();
-
-
-        if ((requestURI.startsWith("/products") && "GET".equals(method)) ||
-                requestURI.startsWith("/auth/") ||
-                requestURI.startsWith("/users/register") ||
-                requestURI.equals("/categories")){
-            chain.doFilter(request, response);
-            return;
-        }
 
         final String authorizationHeader = request.getHeader("Authorization");
 
