@@ -78,6 +78,10 @@ public class Customer {
                 .orElse(null);
     }
 
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
     public UUID getId() {
         return id;
     }

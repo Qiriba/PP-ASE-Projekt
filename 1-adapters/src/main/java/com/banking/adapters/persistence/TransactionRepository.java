@@ -2,19 +2,11 @@ package com.banking.adapters.persistence;
 
 import com.banking.application.ports.out.TransactionRepositoryPort;
 import com.banking.domain.model.Transactions;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 
-@Component
-public class TransactionRepository implements TransactionRepositoryPort {
+import java.util.UUID;
 
-    private final SpringTransactionJpaRepository jpaRepository;
 
-    public TransactionRepository(SpringTransactionJpaRepository jpaRepository) {
-        this.jpaRepository = jpaRepository;
-    }
-
-    @Override
-    public void save(Transactions transaction) {
-        jpaRepository.save(transaction);
-    }
+public interface TransactionRepository extends JpaRepository<Transactions, UUID> {
 }
