@@ -1,6 +1,5 @@
 package com.banking.domain.model;
 
-import com.banking.domain.model.enums.TransactionType;
 import com.banking.domain.model.exceptions.InsufficientFundsException;
 import com.banking.domain.model.valueobjects.Money;
 import com.banking.domain.model.valueobjects.AccountNumber;
@@ -8,7 +7,6 @@ import com.banking.domain.model.exceptions.AccountLockedException;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Currency;
 import java.util.List;
