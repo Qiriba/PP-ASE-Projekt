@@ -8,6 +8,7 @@ public class AccountNumber {
     private final String value;
 
     public AccountNumber(String value) {
+        System.out.println("AccountNumber created with value: " + value);
         if (value == null || !value.matches("\\d{10}")) {
             throw new IllegalArgumentException("Invalid account number format. Must be 10 digits.");
         }
@@ -37,6 +38,8 @@ public class AccountNumber {
     }
 
     public static AccountNumber generate() {
-        return new AccountNumber(UUID.randomUUID().toString());
+        long number = (long)(Math.random() * 1_000_000_0000L);
+        String formattedNumber = String.format("%010d", number);
+        return new AccountNumber(formattedNumber);
     }
 }

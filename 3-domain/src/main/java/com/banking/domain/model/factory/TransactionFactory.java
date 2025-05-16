@@ -14,7 +14,6 @@ public class TransactionFactory {
 
     public Transactions createDeposit(Account account, Money amount) {
         return new Transactions(
-                UUID.randomUUID(),
                 LocalDateTime.now(),
                 amount,
                 TransactionType.DEPOSIT,
@@ -25,7 +24,6 @@ public class TransactionFactory {
 
     public Transactions createWithdrawal(Account account, Money amount) {
         return new Transactions(
-                UUID.randomUUID(),
                 LocalDateTime.now(),
                 amount,
                 TransactionType.WITHDRAWAL,
@@ -36,7 +34,6 @@ public class TransactionFactory {
 
     public Transactions createTransfer(Account source, Account target, Money amount) {
         return new Transactions(
-                UUID.randomUUID(),
                 LocalDateTime.now(),
                 amount,
                 TransactionType.TRANSFER,

@@ -1,3 +1,561 @@
+POST http://localhost:8080/api/banking/deposit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 95
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "accountId": "1d74aaac-081e-445c-8649-b41c1a1196fc",
+  "amount": 100,
+  "currency": "EUR"
+}
+
+###
+
+POST http://localhost:8080/api/banking/deposit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 95
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "accountId": "1d74aaac-081e-445c-8649-b41c1a1196fc",
+  "amount": 100,
+  "currency": "EUR"
+}
+
+<> 2025-05-16T194455.401.json
+
+###
+
+POST http://localhost:8080/api/banking/deposit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 91
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "accountId": "1d74aaac081e445c8649b41c1a1196fc",
+  "amount": 100,
+  "currency": "EUR"
+}
+
+<> 2025-05-16T194255.401.json
+
+###
+
+POST http://localhost:8080/api/banking/deposit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 91
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "accountId": "1d74aaac081e445c8649b41c1a1196fc",
+  "amount": 100,
+  "currency": "EUR"
+}
+
+<> 2025-05-16T194214.401.json
+
+###
+
+POST http://localhost:8080/api/banking/deposit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 91
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "accountId": "1d74aaac081e445c8649b41c1a1196fc",
+  "amount": 100,
+  "currency": "EUR"
+}
+
+<> 2025-05-16T194158.401.json
+
+###
+
+POST http://localhost:8080/api/banking/deposit
+Content-Type: application/json
+Content-Length: 91
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "accountId": "1d74aaac081e445c8649b41c1a1196fc",
+  "amount": 100,
+  "currency": "EUR"
+}
+
+<> 2025-05-16T194145.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T194012.201.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T193951.201.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T193912.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T193648.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T192935.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T192743.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T192417.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T192018.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T191758.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTU0MTgsImV4cCI6MTc0NzQxOTAxOH0.aYqJRd48cmhBSVH5D_m8YZcdge4xIr4CJsgj9dSvA2Y
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T191031.401.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T191018.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTUzMjEsImV4cCI6MTc0NzQxODkyMX0.KlYVTCYSMZDT2E8hbJRIkJx968urJZW_4am6iEK_JQw
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T190853.401.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T190841.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTUyNjEsImV4cCI6MTc0NzQxODg2MX0.vr4OR-6hFZvdzgyXx3kXOCysb9q2fEcsL8JFhqxBwtU
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T190752.401.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T190741.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTQ5NzIsImV4cCI6MTc0NzQxODU3Mn0.mODX58zMR6F3T6S2E1CBIXu3YQiKt8fdc6cq1aMH97E
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T190307.401.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T190252.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTQ4NTMsImV4cCI6MTc0NzQxODQ1M30.Ip4Q-niADn4ome-ZnrwKd9ZOpBmThjgt6AjD8H4oaoA
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T190111.401.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T190053.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTQ4MDAsImV4cCI6MTc0NzQxODQwMH0.v9KhH3R6Vjwd3mmNwpxyZiNBhG01rNFEiZif4UD_pDI
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T190027.401.json
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T190000.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T185945.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T185816.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T185454.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4"
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T185350.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 103
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "customerId": "cbd4b2f913bb4b57a767fc2d41ca5546",
+  "initialDeposit": 69
+}
+
+<> 2025-05-16T185313.401.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 103
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "customerId": "cbd4b2f913bb4b57a767fc2d41ca5546",
+  "initialDeposit": 69
+}
+
+###
+
 POST http://localhost:8080/api/accounts
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
@@ -268,250 +826,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2025-04-12T190958.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T190533.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T190258.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T190016.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T185250.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T185127.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T184858.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T184608.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T184432.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T184055.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T183746.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T183711.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T183645.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "password": "123123",
-  "pin": "1231",
-  "username": "abcde"
-}
-
-<> 2025-04-12T183341.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Type: application/json
-Content-Length: 2
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{}
-
-<> 2025-04-12T183229.500.json
-
-###
-
-POST http://localhost:8080/api/customers/register
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2025-04-10T112452.404.json
 
 ###
 

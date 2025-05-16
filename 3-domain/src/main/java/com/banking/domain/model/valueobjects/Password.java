@@ -1,5 +1,7 @@
 package com.banking.domain.model.valueobjects;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 import java.util.Objects;
 
 public class Password {
@@ -24,6 +26,11 @@ public class Password {
         if (this == o) return true;
         if (!(o instanceof Password that)) return false;
         return password.equals(that.password);
+    }
+
+    @JsonValue
+    public String getPassword() {
+        return password;
     }
 
     @Override

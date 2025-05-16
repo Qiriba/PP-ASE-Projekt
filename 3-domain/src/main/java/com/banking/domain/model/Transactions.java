@@ -31,8 +31,7 @@ public class Transactions {
     @JoinColumn(name = "target_account_id", nullable = true)
     private Account targetAccount;
 
-    public Transactions(UUID id, LocalDateTime timestamp, Money amount, TransactionType type, Account sourceAccount, Account targetAccount) {
-        this.id = id;
+    public Transactions(LocalDateTime timestamp, Money amount, TransactionType type, Account sourceAccount, Account targetAccount) {
         this.timestamp = timestamp;
         this.amount = amount;
         this.type = type;

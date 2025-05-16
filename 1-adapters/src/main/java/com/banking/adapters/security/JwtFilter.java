@@ -27,21 +27,24 @@ public class JwtFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
+        logger.info("JWT Filter invoked for request: " + request.getMethod() + " " + request.getRequestURI());
 
         final String requestURI = request.getRequestURI();
         final String method = request.getMethod();
-
+        logger.debug("Request URI: " + requestURI + ", Method: " + method);
 
         if ((requestURI.startsWith("/products") && "GET".equals(method)) ||
                 requestURI.startsWith("/auth/") ||
                 requestURI.startsWith("/users/register") ||
-                requestURI.equals("/categories")){
+                requestURI.equals("/categories")) {
+            logger.debug("Request is to a public endpoint, skipping JWT validation.");
             chain.doFilter(request, response);
             return;
         }
-        final String authorizationHeader = request.getHeader("Authorization");
 
+        final String authorizationHeader = request.getHeader("Authorization");
         if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
+            logger.warn("Missing or invalid Authorization header: " + authorizationHeader);
             response.sendError(HttpServletResponse.SC_FORBIDDEN, "Missing or Invalid JWT Token");
             return;
         }
@@ -54,18 +57,23 @@ public class JwtFilter extends OncePerRequestFilter {
                     .build()
                     .parseClaimsJws(token)
                     .getBody();
+            logger.info("JWT successfully parsed. Subject: " + claims.getSubject());
         } catch (Exception e) {
+            logger.warn("JWT parsing failed: " + e.getMessage());
             response.sendError(HttpServletResponse.SC_FORBIDDEN, "Invalid JWT Token");
             return;
         }
 
         String username = claims.getSubject();
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+            logger.info("Setting authentication for user: " + username);
             User userDetails = new User(username, "", Collections.emptyList());
             UsernamePasswordAuthenticationToken authenticationToken =
                     new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
             authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+        } else {
+            logger.debug("Username is null or Authentication already set in context.");
         }
 
         chain.doFilter(request, response);

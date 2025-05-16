@@ -1,5 +1,7 @@
 package com.banking.domain.model.valueobjects;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 import java.util.Objects;
 
 public class PIN {
@@ -26,6 +28,10 @@ public class PIN {
         return pin.equals(pin1.pin);
     }
 
+    @JsonValue
+    public String getPIN() {
+        return pin;
+    }
     @Override
     public int hashCode() {
         return Objects.hash(pin);

@@ -35,7 +35,6 @@ public class AccountCreationService implements AccountCreationUseCase {
         Money initialBalance = new Money(request.initialDeposit(), currency);
 
         Account account = new Account(
-                UUID.randomUUID(),
                 AccountNumber.generate(),
                 initialBalance,
                 customer

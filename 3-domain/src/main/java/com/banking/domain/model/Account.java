@@ -1,5 +1,6 @@
 package com.banking.domain.model;
 
+import com.banking.domain.model.AttributeConverter.AccountNumberConverter;
 import com.banking.domain.model.exceptions.InsufficientFundsException;
 import com.banking.domain.model.valueobjects.Money;
 import com.banking.domain.model.valueobjects.AccountNumber;
@@ -19,11 +20,14 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Embedded
+    @Column(name = "account_number", nullable = false)
+    @Convert(converter = AccountNumberConverter.class)
     private AccountNumber accountNumber;
 
-    @Embedded
+    @Convert(converter = com.banking.infrastructure.persistence.converter.MoneyConverter.class)
+    @Column(name = "amount", nullable = false)
     private Money balance;
+
 
     private boolean locked;
 
@@ -40,8 +44,7 @@ public class Account {
     protected Account() {
     }
 
-    public Account(UUID id, AccountNumber accountNumber, Money initialBalance, Customer customer) {
-        this.id = id;
+    public Account(AccountNumber accountNumber, Money initialBalance, Customer customer) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
         this.locked = false;

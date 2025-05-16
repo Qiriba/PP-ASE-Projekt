@@ -16,7 +16,7 @@ import java.util.*;
 @Component
 public class JwtUtil implements JwtProvider {
 
-    private final static SecretKey SECRET_KEY = Keys.hmacShaKeyFor("MySuperSecureSecretKeyThatIsLongEnoughForHS256".getBytes(StandardCharsets.UTF_8));
+    private final static SecretKey SECRET_KEY = Keys.hmacShaKeyFor("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".getBytes(StandardCharsets.UTF_8));
 
     @Override
     public String generateToken(Customer customer) {
