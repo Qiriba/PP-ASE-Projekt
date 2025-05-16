@@ -1,3 +1,100 @@
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 103
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "customerId": "cbd4b2f913bb4b57a767fc2d41ca5546",
+  "initialDeposit": 69
+}
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTMyMDcsImV4cCI6MTc0NzQxNjgwN30.MBG4Qmzw1un5w2FwhAYFp3qsOH1zs6WxDXw5OAu9gY4
+Content-Length: 103
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "customerId": "cbd4b2f913bb4b57a767fc2d41ca5546",
+  "initialDeposit": 69
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T183327.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZSIsImN1c3RvbWVySWQiOiJjYmQ0YjJmOS0xM2JiLTRiNTctYTc2Ny1mYzJkNDFjYTU1NDYiLCJpYXQiOjE3NDc0MTI4MTksImV4cCI6MTc0NzQxNjQxOX0.-RnuX4Fb4GUABIdl9YF80QUeZ_-MhjPvhKGVhEEB4TM
+Content-Length: 104
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "customerId": "cbd4b2f913bb4b57a767fc2d41ca5546",
+  "initialDeposit": 69
+
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 49
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "Username": "abcde",
+  "Password": "123123"
+}
+
+<> 2025-05-16T182659.200.txt
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Content-Length: 106
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "currencyCode": "EUR",
+  "customerId": "cbd4b2f913bb4b57a767fc2d41ca5546",
+  "initialDeposit": 69
+
+}
+
+###
+
 POST http://localhost:8080/auth/login
 Content-Type: application/json
 Content-Length: 49

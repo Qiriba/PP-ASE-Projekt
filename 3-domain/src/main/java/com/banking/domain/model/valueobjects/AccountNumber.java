@@ -1,6 +1,7 @@
 package com.banking.domain.model.valueobjects;
 
 import java.util.Objects;
+import java.util.UUID;
 
 public class AccountNumber {
 
@@ -33,5 +34,9 @@ public class AccountNumber {
     @Override
     public String toString() {
         return "AccountNumber{" + "value='" + value + '\'' + '}';
+    }
+
+    public static AccountNumber generate() {
+        return new AccountNumber(UUID.randomUUID().toString());
     }
 }

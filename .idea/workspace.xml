@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/interfaces/controller/AccountCreatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/persistence/SpringAccountRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/in/AccountCreationUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/ports/out/AccountRepositoryPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/AccountCreationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/dto/AccountCreationRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/enums/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/enums/TransactionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0-plugins/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/0-plugins/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/AccountNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/AccountNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -77,7 +87,7 @@
       <command value="mvn flyway:migrate -Dflyway.configFiles=myFlywayConfig.conf" />
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.All in generated-requests">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #5">
     <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
       <method v="2" />
     </configuration>
@@ -85,6 +95,9 @@
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="BankingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -102,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #5" />
         <item itemvalue="Spring Boot.BankingApplication" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
@@ -126,6 +140,7 @@
       <workItem from="1744535142762" duration="4056000" />
       <workItem from="1744620818448" duration="8202000" />
       <workItem from="1745481205893" duration="2256000" />
+      <workItem from="1747411634615" duration="2350000" />
     </task>
     <servers />
   </component>
