@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2-application/src/test/java/com/banking/application/services/CreateUserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-domain/src/test/java/com/banking/domain/model/valueobjects/AccountNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,10 +76,7 @@
       <command value="mvn flyway:migrate -Dflyway.configFiles=myFlywayConfig.conf" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MoneyTest">
-    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TransactionFactoryTest">
     <configuration name="AccountCreationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2-application" />
       <extension name="coverage">
@@ -147,13 +138,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="3-domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.banking.domain.model.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.banking.domain.model.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.banking.domain.model.factory.TransactionFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionFactoryTest" />
         <item itemvalue="JUnit.MoneyTest" />
         <item itemvalue="JUnit.AccountCreationServiceTest" />
         <item itemvalue="JUnit.AccountCreationServiceTest.shouldCreateAccountForExistingCustomer" />
         <item itemvalue="JUnit.AccountNumberTest" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +181,7 @@
       <workItem from="1744620818448" duration="8202000" />
       <workItem from="1745481205893" duration="2256000" />
       <workItem from="1747411634615" duration="6079000" />
-      <workItem from="1747495881716" duration="1690000" />
+      <workItem from="1747495881716" duration="2107000" />
     </task>
     <servers />
   </component>
