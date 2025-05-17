@@ -5,37 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/AttributeConverter/AccountNumberConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/AttributeConverter/MoneyConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-10T112452.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T183229.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T183341.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T183645.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T183711.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T183746.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T184055.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T184432.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T184608.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T184858.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T185127.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T185250.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T190016.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T190258.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-04-12T190533.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-application/src/test/java/com/banking/application/services/CreateUserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-domain/src/test/java/com/banking/domain/model/valueobjects/AccountNumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-adapters/src/main/java/com/banking/adapters/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/AccountCreationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/src/main/java/com/banking/application/services/AccountCreationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/factory/TransactionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/factory/TransactionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/AccountNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/AccountNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/PIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/PIN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/src/main/java/com/banking/domain/model/valueobjects/Password.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking.db" beforeDir="false" afterPath="$PROJECT_DIR$/banking.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3-domain/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,32 +46,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/code/PP-ASE-Projekt/1-adapters/src/main/java/com/banking/adapters/security",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "settings.editor.splitter.proportion": "0.3058104",
-    "spring.configuration.checksum": "ddb121fde329f8939a6d096377269adb",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/PP-ASE-Projekt/1-adapters/src/main/java/com/banking/adapters/security&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.3058104&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ddb121fde329f8939a6d096377269adb&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tobis\source\repos\PP-ASE-Projekt\0-plugins\src\main\resources" />
@@ -108,39 +82,78 @@
       <command value="mvn flyway:migrate -Dflyway.configFiles=myFlywayConfig.conf" />
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #3">
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MoneyTest">
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="BankingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="0-plugins" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking.BankingApplication" />
+    <configuration name="AccountCreationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.banking.*" />
+          <option name="PATTERN" value="com.banking.application.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.banking.application.services" />
+      <option name="MAIN_CLASS_NAME" value="com.banking.application.services.AccountCreationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountCreationServiceTest.shouldCreateAccountForExistingCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.banking.application.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.banking.application.services" />
+      <option name="MAIN_CLASS_NAME" value="com.banking.application.services.AccountCreationServiceTest" />
+      <option name="METHOD_NAME" value="shouldCreateAccountForExistingCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="3-domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.banking.domain.model.valueobjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.banking.domain.model.valueobjects" />
+      <option name="MAIN_CLASS_NAME" value="com.banking.domain.model.valueobjects.AccountNumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoneyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="3-domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.banking.domain.model.valueobjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.banking.domain.model.valueobjects" />
+      <option name="MAIN_CLASS_NAME" value="com.banking.domain.model.valueobjects.MoneyTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MoneyTest" />
+        <item itemvalue="JUnit.AccountCreationServiceTest" />
+        <item itemvalue="JUnit.AccountCreationServiceTest.shouldCreateAccountForExistingCustomer" />
+        <item itemvalue="JUnit.AccountNumberTest" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
-        <item itemvalue="Spring Boot.BankingApplication" />
-        <item itemvalue="HTTP Request.generated-requests | #5" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +174,8 @@
       <workItem from="1744535142762" duration="4056000" />
       <workItem from="1744620818448" duration="8202000" />
       <workItem from="1745481205893" duration="2256000" />
-      <workItem from="1747411634615" duration="5970000" />
+      <workItem from="1747411634615" duration="6079000" />
+      <workItem from="1747495881716" duration="1690000" />
     </task>
     <servers />
   </component>
