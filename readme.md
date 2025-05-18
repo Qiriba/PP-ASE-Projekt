@@ -17,7 +17,6 @@ Content-Type: application/json
 
 
 
-
 ## Login
 POST http://localhost:8080/auth/login
 Content-Type: application/json
