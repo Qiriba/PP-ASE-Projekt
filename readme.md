@@ -1,6 +1,6 @@
 # How to run
 Clone repo, Mit IntelliJ Idea Projekt/.idea/runConfigurations/BankingApplication.xml als Konfiguration verwenden.
-
+Test Konfigurationen sind auch im gleichen Ordner
 
 # WORKFLOW
 
