@@ -30,11 +30,11 @@ public class AccountCreatorController {
     }
 
     @PostMapping
-    public ResponseEntity<Account> createAccount(@RequestBody AccountCreationRequestDTO requestDTO,
+    public ResponseEntity<UUID> createAccount(@RequestBody AccountCreationRequestDTO requestDTO,
                                                  @RequestHeader("Authorization") String authHeader) {
 
         Customer customer = customerAuthService.getCustomerFromToken(authHeader);
         Account account = accountCreationUseCase.createAccount(customer.getId(), requestDTO);
-        return new ResponseEntity<>(account, HttpStatus.CREATED);
+        return new ResponseEntity<>(account.getId(), HttpStatus.CREATED);
     }
 }

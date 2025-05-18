@@ -28,14 +28,12 @@ public class JwtFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
         logger.info("JWT Filter invoked for request: " + request.getMethod() + " " + request.getRequestURI());
-
         final String requestURI = request.getRequestURI();
         final String method = request.getMethod();
-        logger.debug("Request URI: " + requestURI + ", Method: " + method);
-
+        logger.info("Request URI: " + requestURI + ", Method: " + method);
         if ((requestURI.startsWith("/products") && "GET".equals(method)) ||
                 requestURI.startsWith("/auth/") ||
-                requestURI.startsWith("/users/register") ||
+                requestURI.startsWith("/customers/register") ||
                 requestURI.equals("/categories")) {
             logger.debug("Request is to a public endpoint, skipping JWT validation.");
             chain.doFilter(request, response);

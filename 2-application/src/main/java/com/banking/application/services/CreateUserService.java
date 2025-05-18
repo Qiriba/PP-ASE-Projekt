@@ -22,6 +22,10 @@ public class CreateUserService implements CreateUserUseCase {
     @Override
     @Transactional
     public Customer createUser(String username, String rawPassword, String rawPin) {
+        if (customerRepository.findByUsername(username).isPresent()) {
+            throw new IllegalArgumentException("Benutzername ist bereits vergeben.");
+        }
+
         Password password = new Password(rawPassword);
         PIN pin = new PIN(rawPin);
         Customer customer = new Customer(username, password, pin);

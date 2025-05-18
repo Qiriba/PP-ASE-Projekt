@@ -1,6 +1,7 @@
 package com.banking.domain.model;
 
 import com.banking.domain.model.AttributeConverter.AccountNumberConverter;
+import com.banking.domain.model.AttributeConverter.MoneyConverter;
 import com.banking.domain.model.exceptions.InsufficientFundsException;
 import com.banking.domain.model.valueobjects.Money;
 import com.banking.domain.model.valueobjects.AccountNumber;
@@ -24,7 +25,7 @@ public class Account {
     @Convert(converter = AccountNumberConverter.class)
     private AccountNumber accountNumber;
 
-    @Convert(converter = com.banking.infrastructure.persistence.converter.MoneyConverter.class)
+    @Convert(converter = MoneyConverter.class)
     @Column(name = "amount", nullable = false)
     private Money balance;
 

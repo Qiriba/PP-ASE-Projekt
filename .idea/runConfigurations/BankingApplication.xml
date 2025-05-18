@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BankingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="DEBUG_MODE" value="true" />
+    <module name="0-plugins" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking.BankingApplication" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.banking.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

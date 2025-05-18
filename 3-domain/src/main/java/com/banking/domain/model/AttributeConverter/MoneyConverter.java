@@ -1,5 +1,4 @@
-package com.banking.infrastructure.persistence.converter;
-
+package com.banking.domain.model.AttributeConverter;
 import com.banking.domain.model.valueobjects.Money;
 
 import jakarta.persistence.AttributeConverter;
