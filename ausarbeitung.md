@@ -127,7 +127,18 @@ Das **Open/Closed Principle (OCP)** wird berücksichtigt: Die `Account`-Klasse i
 
 ---
 
-## Einsatz des Entwurfsmusters: Factory
+
+# 5 Code Smells 
+
+## Duplicate Code
+In den Controllern TransactionController und AccountCreatorController wurden in beiden Klassen die Funktionen `private Customer getCustomerFromToken(String authHeader)` sowie `private Customer getCustomerById(UUID id)` verwendet. Dies sind eigentlich Helper funktionen und sollten nicht in den Klassen sein. 
+Da es aber keine zentrale Implementierung gibt führt dies zu Code Duplication. Um das ganze zu lösen wurde ein Service `CustomerAuthService` implementieren, welcher diese funktionen übernimmt. Dieser befindet sich in der Application Layer bei den anderen Services befinden. Um das ganze zu ermöglichen mussten neue Funktionen in die RepositoryPorts von Account und Customer implementiert werden,
+die die Funktionalität ermöglichen. Nun kann der Service verwendet werden um Customer Informationen zu beziehen. Durch das refactoring hat sich die Lesbarkeit des Codes erhöht und der Code wurde kürzer.  Der gesamte Commit befindet sich [hier](https://github.com/Qiriba/PP-ASE-Projekt/commit/55ac49407bab9f9a5876e2010a80cde42804c481)
+
+
+
+---
+# 6 Entwurfsmuster
 
 Im Projekt wurde das Entwurfsmuster Factory (Erzeugermuster) gezielt eingesetzt und zwar in Form der Klasse `TransactionFactory`.
 
