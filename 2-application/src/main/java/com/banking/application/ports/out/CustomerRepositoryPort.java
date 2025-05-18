@@ -9,4 +9,6 @@ public interface CustomerRepositoryPort {
     Customer save(Customer customer);
     Optional<Customer> findById(UUID id);
     Optional<Customer> findByUsername(String username);
+    Optional<Customer> findCustomerByAccountId(UUID accountId);
+
 }

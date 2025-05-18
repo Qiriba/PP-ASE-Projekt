@@ -29,4 +29,12 @@ public class SpringCustomerRepositoryAdapter implements CustomerRepositoryPort {
     public Optional<Customer> findByUsername(String username) {
         return customerRepository.findByUsername(username);
     }
+
+    @Override
+    public Optional<Customer> findCustomerByAccountId(UUID accountId) {
+        return customerRepository.findAll().stream()
+                .filter(customer -> customer.getAccounts().stream()
+                        .anyMatch(account -> account.getId().equals(accountId)))
+                .findFirst();
+    }
 }

@@ -1,6 +1,7 @@
 package com.banking.adapters.interfaces.controller;
 
 import com.banking.adapters.persistence.CustomerRepository;
+import com.banking.application.services.CustomerAuthService;
 import com.banking.application.services.TransactionService;
 import com.banking.domain.model.Account;
 import com.banking.domain.model.Customer;
@@ -11,11 +12,9 @@ import com.banking.domain.model.exceptions.CustomerNotFoundException;
 import com.banking.domain.model.exceptions.AccountLockedException;
 import com.banking.domain.model.valueobjects.Money;
 import com.banking.adapters.security.JwtUtil;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 @RestController
@@ -26,12 +25,14 @@ public class TransactionController {
     private final CustomerRepository customerRepository;
     private final JwtUtil jwtUtil;
 
+    private final CustomerAuthService customerAuthService;
     public TransactionController(TransactionService transactionService,
                                  CustomerRepository customerRepository,
-                                 JwtUtil jwtUtil) {
+                                 JwtUtil jwtUtil, CustomerAuthService customerAuthService) {
         this.transactionService = transactionService;
         this.customerRepository = customerRepository;
         this.jwtUtil = jwtUtil;
+        this.customerAuthService = customerAuthService;
     }
 
     @PostMapping("/deposit")
@@ -57,7 +58,7 @@ public class TransactionController {
                                       @RequestBody TransferRequestDTO request) {
         Customer customer = getCustomerFromToken(authHeader);
         Account from = getCustomerAccount(customer, request.fromAccountId());
-        Account to = findAnyAccountById(request.toAccountId());
+        Account to = customerAuthService.findAnyAccountById(request.toAccountId());
         transactionService.transfer(from, to, new Money(request.amount(), request.currency()));
         return ResponseEntity.ok().build();
     }
@@ -66,7 +67,7 @@ public class TransactionController {
     private Customer getCustomerFromToken(String authHeader) {
         String token = authHeader.replace("Bearer ", "");
         UUID customerId = jwtUtil.extractCustomerId(token);
-        return getCustomerById(customerId);
+        return customerAuthService.getCustomerById(customerId);
     }
 
     private Account getCustomerAccount(Customer customer, UUID accountId) {
@@ -79,18 +80,4 @@ public class TransactionController {
         }
         return account;
     }
-
-    private Account findAnyAccountById(UUID accountId) {
-        return customerRepository.findAll().stream()
-                .flatMap(c -> c.getAccounts().stream())
-                .filter(a -> a.getId().equals(accountId))
-                .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("Target account not found"));
-    }
-
-    private Customer getCustomerById(UUID id) {
-        return customerRepository.findById(id)
-                .orElseThrow(() -> new CustomerNotFoundException("Customer with ID " + id + " not found"));
-    }
-
 }
