@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="" />
+    <list default="true" id="4e0dc370-0f8e-41f2-9e6e-633c187d3d8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ausarbeitung.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +72,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tobis\source\repos\PP-ASE-Projekt\0-plugins\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.banking.domain.account.exceptions" />
+      <recent name="com.banking.domain.account" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -182,6 +189,7 @@
       <workItem from="1745481205893" duration="2256000" />
       <workItem from="1747411634615" duration="6079000" />
       <workItem from="1747495881716" duration="2107000" />
+      <workItem from="1747564037273" duration="2218000" />
     </task>
     <servers />
   </component>

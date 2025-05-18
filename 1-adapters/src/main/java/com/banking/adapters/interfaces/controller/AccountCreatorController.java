@@ -32,7 +32,6 @@ public class AccountCreatorController {
     public ResponseEntity<Account> createAccount(@RequestBody AccountCreationRequestDTO requestDTO,
                                                  @RequestHeader("Authorization") String authHeader) {
 
-
         Customer customer = getCustomerFromToken(authHeader);
         Account account = accountCreationUseCase.createAccount(customer.getId(), requestDTO);
         return new ResponseEntity<>(account, HttpStatus.CREATED);
